@@ -1,0 +1,7 @@
+checkoutpayment:
+  path: '/payment'
+  defaults:
+    _controller: '\Drupal\checkoutpayment\Controller\CheckoutpaymentController::indexAction'
+  requirements:
+    _permission: 'access content'
+

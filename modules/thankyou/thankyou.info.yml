@@ -1,0 +1,5 @@
+name: Thankyou
+type: module
+description: "Thankyou"
+package: Sample
+core: 8.x

@@ -1,0 +1,5 @@
+name: Product
+type: module
+description: "Product"
+package: Sample
+core: 8.x

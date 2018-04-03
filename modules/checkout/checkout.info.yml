@@ -1,0 +1,5 @@
+name: Checkout
+type: module
+description: "Checkout"
+package: Sample
+core: 8.x

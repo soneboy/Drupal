@@ -1,0 +1,7 @@
+product:
+  path: '/product/{id}'
+  defaults:
+    _controller: '\Drupal\product\Controller\ProductController::indexAction'
+  requirements:
+    _permission: 'access content'
+

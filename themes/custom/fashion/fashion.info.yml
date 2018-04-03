@@ -1,0 +1,8 @@
+name: Fashion
+type: theme
+desription: Simple theme for fashion
+package: Custom
+core: 8.x
+libraries:
+  - fashion/global-css
+  - fashion/global-js

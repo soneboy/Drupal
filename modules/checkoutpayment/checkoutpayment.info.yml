@@ -1,0 +1,5 @@
+name: Checkoutpayment
+type: module
+description: "Checkoutpayment"
+package: Sample
+core: 8.x

@@ -1,0 +1,6 @@
+cart:
+  path: '/cart'
+  defaults:
+    _controller: '\Drupal\cart\Controller\CartController::indexAction'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,6 @@
+products:
+  version: 1.x
+  js:
+    js/products.js: {}
+  dependencies:
+    - core/jquery

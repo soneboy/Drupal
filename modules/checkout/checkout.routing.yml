@@ -1,0 +1,6 @@
+checkout:
+  path: '/checkout'
+  defaults:
+    _controller: '\Drupal\checkout\Controller\CheckoutController::indexAction'
+  requirements:
+    _permission: 'access content'

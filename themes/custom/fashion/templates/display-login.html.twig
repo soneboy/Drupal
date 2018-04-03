@@ -1,0 +1,34 @@
+{% include directory ~ '/header.html.twig' %}
+<div class="content block">
+
+    <div class="block login-wrap">
+        <div class="block-half">
+            <div class="img-wrap">
+                <img class="full-width" src="assets/img/content/login-image.jpg" alt="">
+            </div>
+        </div>
+        <div class="block-half">
+            <div class="login-form-wrap">
+                <h2>Log in</h2>
+                <h6>Manage your orders, newsletter subscription and more</h6>
+                <div class="login-form clearfix">
+                    <h6>Don't have an account?</h6>
+                    <a class="btn btn-big create-account-btn" href="javascript:;">Create an account</a>
+                    <h6>Log in</h6>
+                    <form method="post">
+                    <div class="form-item form-item-full">
+                        <input class="form-item-text" type="text" name="username" placeholder="Username">
+                    </div>
+                    <div class="form-item form-item-full">
+                        <input class="form-item-text" type="password" name="password" placeholder="Password">
+                    </div>
+                    <a class="forgot-password" href="javascript:;">Forgot your password?</a>
+                    <a class="btn btn-black btn-big login-btn" href="javascript:;">
+                        <input type="submit">Log in</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% include directory ~ '/footer.html.twig' %}

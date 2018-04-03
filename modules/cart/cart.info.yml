@@ -1,0 +1,5 @@
+name: Cart
+type: module
+description: "Cart"
+package: Sample
+core: 8.x

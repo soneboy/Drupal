@@ -1,0 +1,74 @@
+{% include directory ~ '/header.html.twig' %}
+<div class="content block">
+    <div class="checkout-blocks block">
+        <div class="block-half checkout-orders">
+            <h3>My <span>shopping</span> bag</h3>
+            <span class="subtitle"><i class="icon font-ico-basket"></i> My shopping bag</span>
+            <div class="checkout-orders-list clearfix">
+                {% for key, item in cartContent %}
+                <div class="checkout-order">
+                    <div class="order-thumbnail">
+                        <a href="javascript:;">
+                            <img src="{{ item.img }}" alt="" class="desktop-img">
+                            <img src="{{ item.img }}" alt="" class="mobile-img">
+                            <span class="img-ratio">image vignette ratio <span>800x1000</span></span>
+                        </a>
+                    </div>
+                        <div class="order-description">
+                            <h6><a href="javascript:;">{{ item.name }}</a></h6>
+                            <span>
+                                <span class="order-price" data-price="{{ item.price }}">{{ item.price }}</span>
+                            <sup>,00€</sup>
+                            </span>
+                            <span class="small-text color"> {{ item.color }}</span>
+                            <div class="form-item">
+                                <span class="form-label">{{ item.size }}</span>
+                                <select class="form-item-select size-selection" name="" data-index="{{ key }}">
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                    <option value="XXL">XXL</option>
+                                </select>
+                            </div>
+                            <div class="form-item">
+                                <span class="form-label">Quantity</span>
+                                <select class="form-item-select quantity-selection" name="" data-index="{{ key }}">
+                                    <option value="1">1X</option>
+                                    <option value="2">2X</option>
+                                    <option value="3">3X</option>
+                                    <option value="4">4X</option>
+                                </select>
+                            </div>
+                        </div>
+                    <a class="remove-product" data-index="{{ key }}" href="javascript:;"><i class="icon font-ico-recycle-bin"></i></a>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="subtotal-prices order-prices block">
+                <div class="price-row">
+                    <span class="price-label">Sub-total</span>
+                    <span class="price">{{ totalPrice }}<sup>,00€</sup></span>
+                </div>
+            </div>
+        </div>
+        <div class="block-half checkout-form-wrap">
+            <p>You need help finding the right size? <br>Check out our <a href="javascript:;">size guide</a>.</p>
+            <div class="discount-code-form form-item form-item-full">
+                <label for="dsc" class="form-label subtitle">Use a discount code</label>
+                <div class="disc-field-wrap">
+                    <input class="form-item-text" type="text" name="" id="dsc" placeholder="Discount code (eg. AFX8912)">
+                    <button type="submit" class="btn btn-black">Validate</button>
+                </div>
+            </div>
+            <div class="total-prices order-prices block">
+                <div class="price-row">
+                    <span class="price-label">Total</span>
+                    <span class="total-price">{{ totalPrice }}<sup>,00€</sup></span>
+                </div>
+            </div>
+            <a class="btn btn-black btn-medium confirm-purchase" href="../payment">proceed to checkout</a>
+        </div>
+    </div>
+</div>
+{% include directory ~ '/footer.html.twig' %}
+{{ attach_library('checkout/checkout') }}

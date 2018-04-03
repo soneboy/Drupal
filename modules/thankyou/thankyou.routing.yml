@@ -1,0 +1,7 @@
+thankyou:
+  path: '/thankyou'
+  defaults:
+    _controller: '\Drupal\thankyou\Controller\ThankyouController::indexAction'
+  requirements:
+    _permission: 'access content'
+

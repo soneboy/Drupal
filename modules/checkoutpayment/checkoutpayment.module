@@ -1,0 +1,10 @@
+<?php
+
+function checkoutpayment_theme($existing, $type, $theme, $path) {
+    return array(
+        'display_payment' => array(
+            'variables' => array('payment' => NULL, 'totalPrice' => null),
+            'template' => 'display-payment',
+        ),
+    );
+}

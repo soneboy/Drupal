@@ -1,0 +1,13 @@
+<?php
+
+function fashion_preprocess_page(&$variables) {
+         if ($variables['is_front']) {
+                    $cart = isset($_SESSION['cart']) ? sizeof($_SESSION['cart']) : 0;
+                    $variables['cart'] = $cart;
+          }
+}
+
+function fashion_preprocess_header(&$variables) {
+                    $cart = isset($_SESSION['cart']) ? sizeof($_SESSION['cart']) : 0;
+                    $variables['cart'] = $cart;
+}

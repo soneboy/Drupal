@@ -1,0 +1,10 @@
+<?php
+
+function login_theme($existing, $type, $theme, $path) {
+    return array(
+        'display_login' => array(
+            'variables' => array('login' => NULL),
+            'template' => 'display-login',
+        ),
+    );
+}
